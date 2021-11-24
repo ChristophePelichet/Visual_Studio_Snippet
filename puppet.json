@@ -3,6 +3,7 @@
 	"New Puppet .pp role":{
 		"prefix": "newpr",
 		"body": [
+			"# To be documented",
 			"class role:: {",
 				"\r",
 				"include profile::",
@@ -14,6 +15,7 @@
 	"New Puppet .pp profile":{
 		"prefix": "newpp",
 		"body": [
+			"# To be documented",
 			"class profile:: {",
 			"\r",
 			"}"
