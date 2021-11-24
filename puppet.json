@@ -1,0 +1,68 @@
+{
+
+	"New Puppet .pp role":{
+		"prefix": "newpr",
+		"body": [
+			"class role:: {",
+				"\r",
+				"include profile::",
+				"\r",
+			"}"
+		]
+	},
+
+	"New Puppet .pp profile":{
+		"prefix": "newpp",
+		"body": [
+			"class profile:: {",
+			"\r",
+			"}"
+		]
+	},
+
+	"New Puppet File Ressource":{
+		"prefix": "ppf",
+		"body": [
+			"file { '':",
+				"ensure => 'file',",
+				"owner  => '',",
+				"group  => '',",
+				"mode   => '',",
+				"source => 'puppet:///modules/'",
+			    "#require => File[''],",
+			"}"
+		]
+	},
+
+	"New Puppet Directory Ressource":{
+		"prefix": "ppd",
+		"body": [
+			"file { '':",
+				"ensure => 'directory',",
+				"path   => ''",
+				"owner  => '',",
+				"group  => '',",
+				"mode   => '',",
+			"}"
+		]
+	},
+
+	"Net Puppet Packages Ressource":{
+		"prefix":  "ppp",
+		"body": [
+		"package {'':",
+			"ensure => 'present'",
+			"}"
+		]
+	},
+
+	"Net Puppet Service Ressource":{
+		"prefix":  "pps",
+		"body": [
+			"service { '':",
+				"ensure =>   'running',",
+				"enable =>   'true',",
+			"}" 
+		]
+	}
+}
